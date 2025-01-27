@@ -11,7 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-/** @brief Copies n bytes of memory area of src to the memory area of dest. Can't handle overlapping.
+/** @brief Copies n bytes of memory area of
+ *  src to the memory area of dest. Can't handle overlapping.
  *  @param dest - destiny memory area
  *  @param src - source memory area
  *  @param n - len of bytes
