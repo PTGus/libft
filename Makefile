@@ -6,7 +6,7 @@
 #    By: gumendes <gumendes@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/15 09:43:19 by gumendes          #+#    #+#              #
-#    Updated: 2025/01/27 10:14:44 by gumendes         ###   ########.fr        #
+#    Updated: 2025/02/11 11:35:04 by gumendes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,9 +74,29 @@ re: fclean all
 #==============================================================================#
 #                                  UTILS                                       #
 #==============================================================================#
+
 # Colors
-B   = $(shell tput bold)
-RED = $(shell tput setaf 1)
-GRN = $(shell tput setaf 2)
-CYA = $(shell tput setaf 6)
-D   = $(shell tput sgr0)
+#
+# Run the following command to get list of available colors
+# bash -c 'for c in {0..255}; do tput setaf $c; tput setaf $c | cat -v; echo =$c; done'
+#
+B  		= $(shell tput bold)
+BLA		= $(shell tput setaf 0)
+RED		= $(shell tput setaf 1)
+GRN		= $(shell tput setaf 2)
+YEL		= $(shell tput setaf 3)
+BLU		= $(shell tput setaf 4)
+MAG		= $(shell tput setaf 5)
+CYA		= $(shell tput setaf 6)
+WHI		= $(shell tput setaf 7)
+GRE		= $(shell tput setaf 8)
+BRED 	= $(shell tput setaf 9)
+BGRN	= $(shell tput setaf 10)
+BYEL	= $(shell tput setaf 11)
+BBLU	= $(shell tput setaf 12)
+BMAG	= $(shell tput setaf 13)
+BCYA	= $(shell tput setaf 14)
+BWHI	= $(shell tput setaf 15)
+D 		= $(shell tput sgr0)
+BEL 	= $(shell tput bel)
+CLR 	= $(shell tput el 1)
