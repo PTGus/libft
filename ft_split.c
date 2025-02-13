@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gumendes <gumendes@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:19:41 by gumendes          #+#    #+#             */
-/*   Updated: 2024/10/29 16:19:38 by gumendes         ###   ########.fr       */
+/*   Updated: 2025/02/13 15:10:28 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 /** @brief Counts the words of the string
  * 	@param s  string
  * 	@param c  separator
@@ -89,7 +90,7 @@ static char	**split_words(char **result, const char *s, char c)
 		else if ((s[i] == c || i == ft_strlen(s)) && s_word >= 0)
 		{
 			result[j] = fill_word(s, s_word, i);
-			if (!(result[j]))
+			if (!result[j])
 				return (ft_free(result, j));
 			s_word = -1;
 			j++;
